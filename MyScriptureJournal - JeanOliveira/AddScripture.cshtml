@@ -19,7 +19,7 @@
         chapter = Request.Form["chapter"];
         verse = Request.Form["verse"];
         note = Request.Form["note"];
-        date = Request.Form["date"];
+        date = Request.Form[date];
 
         var db = Database.Open("WebPagesScriptures");
         var insertCommand = "INSERT INTO Scriptures (Book, Chapter, Verse, Note, Date) VALUES(@0, @1, @2, @3, @4)";
