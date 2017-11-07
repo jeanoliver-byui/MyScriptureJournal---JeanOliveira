@@ -19,7 +19,7 @@
     }
 
     var selectedData = db.Query(selectCommand, searchTerm);
-    var grid = new WebGrid(source: selectedData, defaultSort: "Book", rowsPerPage: 5);
+    var grid = new WebGrid(source: selectedData, sortFieldName:"Date:Book", defaultSort: "Book", rowsPerPage: 5);
 
 }
 <h2>List Scriptures</h2>
